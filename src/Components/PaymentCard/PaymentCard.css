@@ -1,0 +1,14 @@
+label {
+  align-self: center;
+  padding: 0 2rem 0 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+.payment-form {
+  background-color: transparent;
+}
+
+.expiry-date {
+  display: flex;
+}
