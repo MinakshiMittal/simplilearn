@@ -7,7 +7,7 @@ export const OverlayContainer = () => {
           <p>Login to Explore</p>
         </div>
         <div class="overlay-panel overlay-right">
-          <h1>Hello, Buyer!</h1>
+          <h1>Hello, User!</h1>
           <p>Enroll and invest on right</p>
         </div>
       </div>

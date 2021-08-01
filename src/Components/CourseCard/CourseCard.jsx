@@ -9,7 +9,12 @@ export const CourseCard = ({ course }) => {
   return (
     <div className="available-project-card-container" key={id}>
       <div className="card-container">
-        <img className="project-image" src={thumbnailURL} alt="project" />
+        <img
+          className="project-image"
+          src={thumbnailURL}
+          alt="project"
+          style={{ height: "200px", marginBottom: "1rem" }}
+        />
         <div
           className="product-name-with-wishlist-icon"
           style={{ flexGrow: 1 }}
@@ -18,11 +23,17 @@ export const CourseCard = ({ course }) => {
           <i className="fas fa-heart"></i>
         </div>
         <div className="product-price">
-          <p className="current-product-price">₹{price}</p>
+          <p
+            style={{ color: "#2cb8cb", fontWeight: "900" }}
+            className="current-product-price"
+          >
+            ₹{price}
+          </p>
           <small className="amount-saved"></small>
         </div>
         <button
           className="button primary-btn"
+          style={{ backgroundColor: "#2cb8cb" }}
           onClick={() => navigate(`/course/${id}/buy-course`)}
         >
           BUY COURSE

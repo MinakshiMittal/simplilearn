@@ -28,7 +28,9 @@ export const SignUpForm = () => {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-        <button onClick={signUpHandler}>Sign Up</button>
+        <button style={{ backgroundColor: "#2cb8cb" }} onClick={signUpHandler}>
+          Sign Up
+        </button>
         <span>
           Already have an account? <Link to="/user/login">Log In</Link>
         </span>

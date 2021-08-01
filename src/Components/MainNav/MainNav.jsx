@@ -11,9 +11,9 @@ export const MainNav = () => {
         alt="logo"
         className="hero-image"
       ></img>
-      <div className="hero-name">CODE-N-MINGLE</div>
+      <div className="hero-name">SIMPLILEARN</div>
       {!isUserLogin && (
-        <Link className="login" to="/buyer/login">
+        <Link className="login" to="/user/login">
           Log In
         </Link>
       )}
@@ -22,8 +22,6 @@ export const MainNav = () => {
           Logout
         </button>
       )}
-      {isUserLogin && <Link to="/buyer/dashboard">Dashboard</Link>}
-      {!isUserLogin && <Link to="/">Log In As A Coder</Link>}
     </div>
   );
 };

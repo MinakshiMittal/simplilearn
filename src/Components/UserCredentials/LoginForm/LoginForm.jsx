@@ -15,7 +15,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <div class="form-container sign-in-container">
+    <div className="form-container sign-in-container">
       <form>
         <h1>Sign in</h1>
         <input
@@ -28,7 +28,13 @@ export const LoginForm = () => {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-        <button onClick={loginHandler}>Sign In</button>
+        <button
+          style={{ backgroundColor: "#2cb8cb" }}
+          className=""
+          onClick={loginHandler}
+        >
+          Sign In
+        </button>
         <span>
           Don't have any account?
           <Link to="/user/signup">Sign Up</Link>

@@ -20,7 +20,10 @@ export const PaymentCard = () => {
         <input type="text" placeholder="Street" />
         <input type="text" placeholder="City" />
         <input type="text" placeholder="PostCode" />
-        <button onClick={() => navigate(`/course/${courseId}/otp`)}>
+        <button
+          type="button"
+          onClick={() => navigate(`/course/${courseId}/payment/otp`)}
+        >
           Submit
         </button>
       </form>

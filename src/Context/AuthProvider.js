@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
       const loginResponse = await loginService(email, password);
       if (loginResponse.status === 200) {
         loginUser(loginResponse.data);
-        navigate("dashboard");
+        navigate("/courses");
       }
     } catch (error) {
       console.error(error);
